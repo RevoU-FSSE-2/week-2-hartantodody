@@ -7,7 +7,7 @@
 }
 
 html{
-    background-color: black;
+    background-color: rgb(11, 11, 11);
     scroll-behavior: smooth;
     overflow: scroll;
 }
@@ -96,9 +96,13 @@ article{
     margin: auto;
     display:flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/assets/bg2.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100%;
 }
 
 figure{
@@ -113,6 +117,7 @@ figure{
     border-radius: 2%;
     transition: width 0.5s, height 0.5s;
     overflow: hidden;
+    background-color: black;
 }
 
 figure:hover {
@@ -143,6 +148,10 @@ figure figcaption{
     color: rgb(222, 222, 222);
 }
 
+article a{
+    text-decoration: none;
+}
+
     /* forms */
 
 .register{
@@ -152,6 +161,10 @@ figure figcaption{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(/assets/abstract-background-with-red-lines.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .register fieldset{
@@ -162,7 +175,7 @@ figure figcaption{
     border-radius: 5%;
 }
 
-form fieldset input,select{
+form fieldset input,select,option{
     margin-top: 20px;
     height: 1.2rem;
     color: black;
@@ -189,8 +202,9 @@ button{
 
 button:hover{
     color: white;
-    background-color: rgb(255, 117, 117);
+    background-color: rgb(110, 14, 14);
     cursor: pointer;
+    font-weight: bold;
 }
 
 
@@ -251,6 +265,7 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-repeat: repeat-y;
     }
 
     figure{
