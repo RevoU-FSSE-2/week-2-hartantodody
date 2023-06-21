@@ -66,6 +66,7 @@ body nav img{
     background-size: cover;
 }
 
+
 .hero-text h1{
     margin: 2em 0 0 160px;
     font-size: 5vw;
@@ -79,9 +80,12 @@ body nav img{
     width: 60vw;
 }
 
+
 .hero span{
     color: rgb(255, 76, 76);
     font-style: oblique;
+    animation: fade-in-out 3s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -220,7 +224,21 @@ button:hover{
     font-style: italic;
 }
 
+/* FOOTER */
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+footer span{
+    color: rgb(187, 0, 0);
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 /* RESPONSIVE MEDIA QUERIES */
 
@@ -287,5 +305,13 @@ button:hover{
     
 }
 
+
+/* ANIMATION */
+
+@keyframes fade-in-out {
+    0% {opacity: 0;}
+    50%{ opacity: 1;}
+    100% {opacity: 0;}
+}
 
 
