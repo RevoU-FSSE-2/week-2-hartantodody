@@ -61,10 +61,9 @@ body nav img{
     display: flex;
     flex-direction: column;
     /* background */
-    background-image: url(https://media.giphy.com/media/j8YiZa4RDxlXE4lwsP/giphy.gif);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://media.giphy.com/media/j8YiZa4RDxlXE4lwsP/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(50%);
 }
 
 .hero-text h1{
@@ -82,16 +81,10 @@ body nav img{
 
 .hero span{
     color: rgb(255, 76, 76);
+    font-style: oblique;
 }
 
-/* .hero img{
-    width: 100%;
-    filter: blur(15px);
-    filter: brightness(50%);
-    background-repeat: no-repeat;
-    z-index: -10;
-    overflow: hidden;
-} */
+
 /* BODY AND CONTENT */
 main{
     margin-top: 100px;
@@ -103,10 +96,14 @@ article{
     margin: auto;
     display:flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 figure{
     margin: auto;
+    padding: 15px;
     width: 400px;
     height: 300px;
     display: flex;
@@ -160,20 +157,22 @@ figure figcaption{
 .register fieldset{
     margin: auto;
     padding: 25px;
-    width :350px;
+    width :500px;
     height: 350px;
     border-radius: 5%;
 }
 
-form fieldset input{
+form fieldset input,select{
     margin-top: 20px;
     height: 1.2rem;
+    color: black;
 }
 
 form fieldset span{
     color: rgb(253, 82, 82);
-    font-style: oblique;
+    font-style: italic;
 }
+
 
 button{
     margin: auto;
