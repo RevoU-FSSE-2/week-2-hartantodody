@@ -26,12 +26,9 @@ nav{
     z-index: 1;
 }
 body nav a:not(.icon){
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     text-decoration: none;
-    padding: 23px;
+    padding: 23px 35px;
     float: right;
 }
 
@@ -43,7 +40,6 @@ body nav a:not(.icon):hover{
         rgb(255, 255, 255)
     );
     text-decoration: none;
-    padding: 23px;
 }
 
 body nav img{
@@ -57,7 +53,7 @@ body nav img{
     margin-top: 65px;
     padding: 0;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: calc(80vh - 65px);
     display: flex;
     flex-direction: column;
     /* background */
@@ -68,14 +64,14 @@ body nav img{
 
 
 .hero-text h1{
-    margin: 2em 0 0 160px;
+    margin: 2rem 0 0 160px;
     font-size: 5vw;
     width: 55vw;
     position: absolute;
 }
 
 .hero-text p{
-    margin: 28em 0 0 160px;
+    margin: 20em 0 0 160px;
     font-size: 1vw;
     width: 60vw;
 }
@@ -84,7 +80,7 @@ body nav img{
 .hero span{
     color: rgb(255, 76, 76);
     font-style: oblique;
-    animation: fade-in-out 3s;
+    animation: fade-in-out 1s;
     animation-iteration-count: infinite;
 }
 
@@ -94,6 +90,17 @@ main{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+main p{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 article{
@@ -156,15 +163,35 @@ article a{
     text-decoration: none;
 }
 
+.yt-vid{
+    width: 100%;
+    height: 560px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(/assets/abstract-background-with-red-lines.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.yt-vid iframe{
+    width: 932px;
+    height: 524px;
+}
+
     /* forms */
 
+.register-header{
+    margin-top: 100px;
+    font-style: italic;
+}
+
 .register{
+    width: 100%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(/assets/abstract-background-with-red-lines.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -172,7 +199,7 @@ article a{
 }
 
 .register fieldset{
-    margin: auto;
+    margin: 10px;
     padding: 25px;
     width :500px;
     height: 350px;
@@ -191,11 +218,11 @@ form fieldset span{
 }
 
 
-button{
-    margin: auto;
-    padding: 15px;
-    width: 250px;
-    height: 35px;
+form button{
+    margin-top: 25px;
+    padding: 20px 100px;
+    text-align: center;
+    width: 100px;
     background-color: transparent;
     color: whitesmoke;
     font-style: oblique;
@@ -204,25 +231,13 @@ button{
     border-radius: 5%;
 }
 
-button:hover{
+form button:hover{
     color: white;
     background-color: rgb(110, 14, 14);
     cursor: pointer;
     font-weight: bold;
 }
 
-
-    /* header */
-
-.content-header{
-    margin: auto;
-    font-style: italic;
-}
-
-.register-header{
-    margin-top: 100px;
-    font-style: italic;
-}
 
 /* FOOTER */
 footer{
