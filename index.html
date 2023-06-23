@@ -22,10 +22,13 @@
     </header>
 
     <main>
-        <h1 class="content-header">TOP GAME-NEWS OF THE WEEK!</h1>  
-        <p>Click to get the latest updates for the games you looking for!</p>
         <article class="content">
+            <div class="article-header">
+                <h1 class="content-header">TOP GAME-NEWS OF THE WEEK!</h1>  
+                <p>Click to get the latest updates for the games you looking for!</p>
+            </div>
 
+          <div class="article-content">
             <a href="https://www.ea.com/en-gb/games/apex-legends">
             <figure>
                 <img src="/assets/apex.jpg">
@@ -81,16 +84,19 @@
                     <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dicta reprehenderit quo, voluptatum officia animi molestias veritatis, distinctio quaerat officiis eveniet eum veniam deserunt odio! Sequi asperiores maxime soluta placeat?</figcaption>
                 </figure>
                 </a>
+            </div>
         </article>
 
-        <h1 class="content-header">UPCOMING GAMES!</h1>
+        
         <article class="yt-vid">
-            <iframe width="1090" height="613" src="https://www.youtube.com/embed/SjDMwsbaSd8" title="S.T.A.L.K.E.R. 2: Heart of Chernobyl — Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            <h1 class="content-header">UPCOMING GAMES!</h1>
+            <iframe src="https://www.youtube.com/embed/SjDMwsbaSd8" title="S.T.A.L.K.E.R. 2: Heart of Chernobyl — Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </article>
 
-        <h1 class="register-header">REGISTER NOW!</h1>
+        
         <form class="register" action="" method="post">
+            <h1 class="register-header">REGISTER NOW!</h1>
             <fieldset>
                 <legend>Fill your <span>AGENT</span> name here :</legend>
                 <label>Username :</label>
@@ -110,7 +116,7 @@
                     type="password" 
                     placeholder="">
 
-                <p>Gender</p>
+                <label>Gender : </label>
                 <input type="radio" id="male" name="gender">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender">
@@ -143,11 +149,11 @@
             <br>    
             <label>What kind of FPS games characteristics do you like?</label>
             <br>
-            <input type="checkbox" value="Fiction" id="fiction" ><label for="no">Fiction</label>
-            <input type="checkbox" value="Realistic" id="realistic"><label for="yes">Realistic</label>
-            <input type="checkbox" value="Battle Royale" id="battle-royale"><label for="yes">Battle Royale</label>
-            <input type="checkbox" value="Realistic" id="realistic"><label for="yes">Adventure</label>
-            <input type="checkbox" value="MMORPG" id="mmprg"><label for="yes">MMORPG</label>
+            <input type="checkbox" value="Fiction" id="fiction" ><label for="fiction">Fiction</label>
+            <input type="checkbox" value="Realistic" id="realistic"><label for="realistic">Realistic</label>
+            <input type="checkbox" value="Battle Royale" id="battle-royale"><label for="battle-royale">Battle Royale</label>
+            <input type="checkbox" value="Realistic" id="adventure"><label for="adventure">Adventure</label>
+            <input type="checkbox" value="MMORPG" id="mmorpg"><label for="MMORPG">MMORPG</label>
 
         
         </fieldset>
