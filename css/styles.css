@@ -132,7 +132,7 @@ figure{
     border: solid 1px rgb(96, 96, 96);
     border-radius: 2%;
     transition: width 0.5s, height 0.5s;
-    overflow: hidden;
+    overflow: scroll;
     background-color: black;
 }
 
