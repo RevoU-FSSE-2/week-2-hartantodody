@@ -64,16 +64,17 @@ body nav img{
 
 
 .hero-text h1{
-    margin: 2rem 0 0 160px;
+    margin: 15rem 0 0 160px;
     font-size: 5rem;
     width: 55vw;
     position: absolute;
 }
 
 .hero-text p{
-    margin: 20em 0 0 160px;
+    margin: 33rem 0 0 160px;
     font-size: 1rem;
     width: 60vw;
+    font-style: italic;
 }
 
 
@@ -268,40 +269,80 @@ footer span{
 
 @media only screen and (max-width: 426px){
 
-    .hero-text h1{
-        margin: 8rem 0 0 70px;
+    body nav a:not(.icon){
+        color: white;
+        text-decoration: none;
+        padding: 7px 10px;
+        float: right;
+        font-size: 0.7rem;
+    }
+
+    body nav .home{
+        margin-right: 20px;
+    }
+
+    body nav img{
+        height: 10px;
+    }
+
+    header .hero-text h1{
+        margin: 8rem 0 0 25px;
         font-size: 3rem;
-        width: 55vw;
+        width: 300px;
         position: absolute;
     }
     
-    .hero-text p{
-        margin: 20rem 0 0 70px;
-        font-size: 1.2rem;
-        width: 60vw;
+    header .hero-text p{
+        margin: 27rem 0 0 25px;
+        font-size: 0.9rem;
+        width: 300px;
     }
 
-    main h1{
-        font-size: 2rem;
+    body main h1{
+        font-size: 1rem;
     }
     
-    main p{
-        font-size: 1.2rem;
+    body main p{
+        font-size: 0.8rem;
     }
     
-    figure{
+    body figure{
         width: 380px;
         height: 260px;
     }
 
-    figure img{
+    body figure img{
         width: 280px;
         height: 158px;
     }
 
-    figure figcaption{
-        font-size:
+    body figure figcaption{
+        font-size: 0.6rem;
+        
     }
+
+    form fieldset input:not(#male,#female,#not,#fiction,#realistic,#battle-royale,#adventure,#mmorpg),select,option{
+        height: 1.7rem;
+        width: 300px;
+        margin: 5px;
+    }
+
+    textarea{
+        width: 300px;
+        height: 100px
+    }
+
+    form label{
+        font-size: 0.8rem;
+    }
+   
+    .register fieldset{
+        margin: 10px;
+        padding: 35px;
+        width : 380px;
+        border-radius: 5%;
+    }
+
 }
 
 
@@ -339,7 +380,8 @@ footer span{
     }
 
     figure figcaption{
-        font-size:
+        font-size: 1.2rem;
+        width: 280px;
     }
 
 }
