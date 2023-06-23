@@ -20,7 +20,7 @@ nav{
         rgb(50, 50, 50) 250%
     );
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 65px;
     position: fixed;
     z-index: 1;
@@ -65,14 +65,14 @@ body nav img{
 
 .hero-text h1{
     margin: 2rem 0 0 160px;
-    font-size: 5vw;
+    font-size: 5rem;
     width: 55vw;
     position: absolute;
 }
 
 .hero-text p{
     margin: 20em 0 0 160px;
-    font-size: 1vw;
+    font-size: 1rem;
     width: 60vw;
 }
 
@@ -94,7 +94,7 @@ main{
 
 main h1{
     text-align: center;
-    margin-top: 50px;
+    margin: 25px 0;
     font-style: italic;
 }
 
@@ -105,7 +105,7 @@ main p{
 
 article{
     margin: 50px auto;
-    padding: 50px 0;
+    padding: 25px 0;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/assets/abstract-background-with-red-lines.jpg);
     background-repeat: repeat-x;
     background-position: center;
@@ -179,13 +179,10 @@ article a{
     flex-direction: column;
 }
 
-.yt-vid h1{
-    margin-bottom: 20px;
-}
 
 .yt-vid iframe{
-    width: 932px;
-    height: 524px;
+    aspect-ratio: 16/9;
+    width: 50%;
 }
 
     /* forms */
@@ -269,12 +266,85 @@ footer span{
 
 /* RESPONSIVE MEDIA QUERIES */
 
+@media only screen and (max-width: 426px){
 
-/* @media only screen and (max-width: 768px){
-    .hero{
-        
+    .hero-text h1{
+        margin: 8rem 0 0 70px;
+        font-size: 3rem;
+        width: 55vw;
+        position: absolute;
     }
-} */
+    
+    .hero-text p{
+        margin: 20rem 0 0 70px;
+        font-size: 1.2rem;
+        width: 60vw;
+    }
+
+    main h1{
+        font-size: 2rem;
+    }
+    
+    main p{
+        font-size: 1.2rem;
+    }
+    
+    figure{
+        width: 380px;
+        height: 260px;
+    }
+
+    figure img{
+        width: 280px;
+        height: 158px;
+    }
+
+    figure figcaption{
+        font-size:
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .hero-text h1{
+        margin: 8rem 0 0 70px;
+        font-size: 3rem;
+        width: 55vw;
+        position: absolute;
+    }
+    
+    .hero-text p{
+        margin: 20rem 0 0 70px;
+        font-size: 1.2rem;
+        width: 60vw;
+    }
+
+    main h1{
+        font-size: 2rem;
+    }
+    
+    main p{
+        font-size: 1.2rem;
+    }
+    
+    figure{
+        width: 600px;
+        height: 320px;
+    }
+
+    figure img{
+        width: 360px;
+        height: 280px;
+    }
+
+    figure figcaption{
+        font-size:
+    }
+
+}
+
+
 /* ANIMATION */
 
 @keyframes fade-in-out {
